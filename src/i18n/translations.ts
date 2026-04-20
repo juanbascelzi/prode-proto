@@ -1,0 +1,1022 @@
+export type Language = 'es' | 'en' | 'it' | 'bg' | 'pt';
+
+export const LANGUAGE_OPTIONS: { code: Language; label: string; flag: string }[] = [
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+  { code: 'bg', label: 'Български', flag: '🇧🇬' },
+  { code: 'pt', label: 'Português', flag: '🇧🇷' },
+];
+
+type TranslationStrings = {
+  // Home grid
+  apps: string;
+  home: string;
+  chats: string;
+  profile: string;
+  appNames: {
+    forms: string;
+    people: string;
+    timeControl: string;
+    orgChart: string;
+    files: string;
+    onboarding: string;
+    surveys: string;
+    predictions: string;
+    marketplace: string;
+    vacations: string;
+    performance: string;
+    agentWorkspace: string;
+    servicePortal: string;
+    learning: string;
+    goals: string;
+    peopleExp: string;
+    events: string;
+    knowledgeLibrary: string;
+    recommendations: string;
+  };
+  // Language selector
+  selectLanguage: string;
+  // Header & tabs
+  sportsPredictions: string;
+  tabPredictions: string;
+  tabRanking: string;
+  tabRules: string;
+  // Filters
+  filterUpcoming: string;
+  filterFinished: string;
+  filterPending: string;
+  // Match card
+  myPrediction: string;
+  points: string;
+  pointsLabel: string;
+  // Ranking card
+  ranking: string;
+  positionLabel: string;
+  // Podium card
+  idealPodium: string;
+  configurePodium: string;
+  championSuffix: string;
+  modifyUntil: string;
+  timeUntil: string;
+  // Next match card
+  pendingPrediction: string;
+  predictionReady: string;
+  complete: string;
+  // Matches section
+  matches: string;
+  // Score backdrop
+  savePrediction: string;
+  penaltyQuestion: string;
+  penaltyDescription: string;
+  predictionIn: string;
+  tieBreaker: string;
+  vs: string;
+  // Match points backdrop
+  exactResult: string;
+  matchWinner: string;
+  close: string;
+  pointsExact: string;
+  pointsWinner: string;
+  // Completion card
+  wellDone: string;
+  allPredictionsComplete: string;
+  // Stage selector
+  all: string;
+  groupsDate1: string;
+  groupsDate2: string;
+  groupsDate3: string;
+  roundOf32: string;
+  roundOf16: string;
+  quarterFinals: string;
+  semiFinals: string;
+  final: string;
+  // Stage dialog
+  matchesTitle: string;
+  // Podium selector
+  idealPodiumTitle: string;
+  podiumPrediction: string;
+  first: string;
+  second: string;
+  third: string;
+  team: string;
+  selections: string;
+  byName: string;
+  saveSelection: string;
+  podiumSaved: string;
+  // Podium summary
+  yourIdealPodium: string;
+  champion: string;
+  secondPlace: string;
+  thirdPlace: string;
+  canModifyUntil: string;
+  modifyPodium: string;
+  // Toast
+  predictionSaved: string;
+  // Rules section
+  rulesAndGame: string;
+  howToPlayAndCompete: string;
+  details: string;
+  prizes: string;
+  faq: string;
+  // Rules - details
+  scoringSystem: string;
+  scoringRulesTitle: string;
+  whatResultCounts: string;
+  whatResultCountsItems: string[];
+  matchScoring: string;
+  matchScoringNote: string;
+  exactScoreTitle: string;
+  exactScoreDesc: string;
+  closeScoreTitle: string;
+  closeScoreDesc: string[];
+  winnerOnlyTitle: string;
+  winnerOnlyDesc: string;
+  winnerOnlyExample: string;
+  nothingRightTitle: string;
+  nothingRightDesc: string;
+  knockoutBonusTitle: string;
+  knockoutBonusItems: string[];
+  podiumSpecialTitle: string;
+  podiumSpecialIntro: string;
+  podiumSpecialItems: string[];
+  tiebreakerTitle: string;
+  tiebreakerIntro: string;
+  tiebreakerRules: string[];
+  // Rules - prizes
+  competitionPrizes: string;
+  firstPrize: string;
+  firstPrizeDesc: string;
+  firstPrizeDetail: string;
+  secondPrize: string;
+  secondPrizeDesc: string;
+  secondPrizeDetail: string;
+  thirdPrize: string;
+  thirdPrizeDesc: string;
+  thirdPrizeDetail: string;
+  conditions: string;
+  conditionsText: string;
+  // Rules - FAQs
+  faqs: { q: string; a: string }[];
+  // Ranking table
+  generalPositions: string;
+  participants: string;
+  player: string;
+  resultsPositive: string;
+  resultsExact: string;
+  resultLabel: string;
+  // Team names
+  teamNames: Record<string, string>;
+};
+
+const es: TranslationStrings = {
+  apps: 'Apps',
+  home: 'Home',
+  chats: 'Chats',
+  profile: 'Profile',
+  appNames: {
+    forms: 'Formularios y trámites',
+    people: 'Personas',
+    timeControl: 'Control de horario',
+    orgChart: 'Organigrama',
+    files: 'Archivos',
+    onboarding: 'Onboarding',
+    surveys: 'Encuestas',
+    predictions: 'Pronósticos\ndeportivos',
+    marketplace: 'Marketplace',
+    vacations: 'Vacaciones y permisos',
+    performance: 'Desempeño',
+    agentWorkspace: 'Espacio de trabajo del agente',
+    servicePortal: 'Portal de servicios',
+    learning: 'Aprendizaje',
+    goals: 'Objetivos',
+    peopleExp: 'People experience',
+    events: 'Eventos',
+    knowledgeLibrary: 'Librerías de conocimiento',
+    recommendations: 'Reco...',
+  },
+  selectLanguage: 'Idioma',
+  sportsPredictions: 'Pronósticos deportivos',
+  tabPredictions: 'Pronósticos',
+  tabRanking: 'Ranking',
+  tabRules: 'Reglamento',
+  filterUpcoming: 'Por jugar',
+  filterFinished: 'Finalizados',
+  filterPending: 'Pronóstico pendiente',
+  myPrediction: 'Mi pronóstico',
+  points: 'Puntos',
+  pointsLabel: 'Puntos',
+  ranking: 'Ranking',
+  positionLabel: 'Posición',
+  idealPodium: 'Podio ideal',
+  configurePodium: 'Configura tu podio ideal',
+  championSuffix: 'campeón',
+  modifyUntil: 'Modificalo hasta el 11/6 15:55 h',
+  timeUntil: 'Tienes tiempo hasta el 11/6 15:55 h',
+  pendingPrediction: 'Pronóstico pendiente',
+  predictionReady: 'Pronóstico listo',
+  complete: 'Completar',
+  matches: 'Partidos',
+  savePrediction: 'Guardar pronóstico',
+  penaltyQuestion: '¿Quién gana si hay penales?',
+  penaltyDescription: 'En partidos de eliminación directa, debés seleccionar el equipo que ganará si el partido termina empatado.',
+  predictionIn: 'Predicción: en caso de desempate, ganador',
+  tieBreaker: 'desempate',
+  vs: 'vs',
+  exactResult: 'resultado exacto',
+  matchWinner: 'acertar ganador del partido',
+  close: 'Cerrar',
+  pointsExact: '+5 puntos:',
+  pointsWinner: '+2 puntos:',
+  wellDone: '¡Bien hecho!',
+  allPredictionsComplete: 'Completaste todos los pronósticos posibles.',
+  all: 'Todos',
+  groupsDate1: 'Grupos · Fecha 1',
+  groupsDate2: 'Grupos · Fecha 2',
+  groupsDate3: 'Grupos · Fecha 3',
+  roundOf32: '16 avos',
+  roundOf16: '8 avos',
+  quarterFinals: 'Cuartos',
+  semiFinals: 'Semifinal',
+  final: 'Final',
+  matchesTitle: 'Partidos',
+  idealPodiumTitle: 'Podio ideal',
+  podiumPrediction: 'Pronóstico de podio',
+  first: '1ro',
+  second: '2do',
+  third: '3ro',
+  team: 'Equipo',
+  selections: 'Selecciones',
+  byName: 'Por nombre',
+  saveSelection: 'Guardar selección',
+  podiumSaved: '¡Podio guardado correctamente!',
+  yourIdealPodium: 'Tu podio ideal',
+  champion: 'Campeón',
+  secondPlace: 'Segundo puesto',
+  thirdPlace: 'Tercer puesto',
+  canModifyUntil: 'Podés modificarlo hasta el 11/06 a las 15:55 hs',
+  modifyPodium: 'Modificar podio',
+  predictionSaved: 'Pronóstico guardado',
+  rulesAndGame: 'Reglas y juego',
+  howToPlayAndCompete: 'Como jugar y competir',
+  details: 'Detalles',
+  prizes: 'Premios',
+  faq: 'Preguntas frecuentes',
+  scoringSystem: 'Sistema de puntaje',
+  scoringRulesTitle: '🏆 Reglas de puntaje → Prode Humand',
+  whatResultCounts: '1. Qué resultado se toma',
+  whatResultCountsItems: [
+    'Se toma el resultado del partido completo: 90\' + alargue si hay.',
+    'Penales no cuentan para el marcador.',
+    'En eliminación directa, si hay penales, sí cuenta quién clasifica.',
+  ],
+  matchScoring: '⚽ Puntaje por partido',
+  matchScoringNote: 'En cada partido solo ganas el mayor puntaje que corresponda (no se suman entre sí)',
+  exactScoreTitle: 'A) Si aciertas el marcador exacto',
+  exactScoreDesc: '12 puntos → aciertas el resultado y los goles de ambos equipos',
+  closeScoreTitle: 'B) Si no aciertas el marcador exacto, pero estuviste cerca',
+  closeScoreDesc: [
+    '8 puntos si:',
+    'El partido terminó en empate y tu también pronosticaste empate (aunque no sean los mismos goles), o',
+    'Acertaste el ganador y también la diferencia de goles (ej: real 3-1 y tu has puesto 2-0, ambos diferencia +2)',
+  ],
+  winnerOnlyTitle: 'C) Si aciertas solo el resultado (ganador)',
+  winnerOnlyDesc: '2 puntos → aciertas exactamente los goles de uno de los dos equipos (A o B), aunque el resultado te haya dado mal.',
+  winnerOnlyExample: 'Ej: real 3-1, pronóstico 3-0 → suma 2.',
+  nothingRightTitle: 'D) Si no aciertas a nada',
+  nothingRightDesc: '0 puntos',
+  knockoutBonusTitle: '🥅 Bonus en eliminación directa: "Quién clasifica"',
+  knockoutBonusItems: [
+    '+ 3 puntos si aciertas quién clasifica a la siguiente ronda',
+    'Este bonus se suma a los puntos del partido.',
+  ],
+  podiumSpecialTitle: '🥇 Pronósticos especiales – Podio del torneo',
+  podiumSpecialIntro: 'Se eligen antes de empezar el torneo y suman a la tabla general:',
+  podiumSpecialItems: ['🥇 Campeón: 20 pts', '🥈 Subcampeón: 10 pts', '🥉 Tercer puesto: 6 pts'],
+  tiebreakerTitle: '🔥 Reglas de desempate del ranking (en orden)',
+  tiebreakerIntro: 'Si dos o más usuarios quedan con el mismo puntaje total, se desempata así:',
+  tiebreakerRules: [
+    'Más partidos con 12 puntos (marcador exacto)',
+    'Más partidos con 8 puntos (cercanos: empate o diferencia correcta)',
+    'Más aciertos de "Quién clasifica" (+3) en eliminación directa',
+    'Más aciertos parciales de 2 puntos (goles de un equipo)',
+    'Timestamp del primer pronóstico hecho (más temprano gana)',
+  ],
+  competitionPrizes: 'Premios de la competencia',
+  firstPrize: '🏆 Primer puesto',
+  firstPrizeDesc: 'Un viaje',
+  firstPrizeDetail: 'Lugar a definir',
+  secondPrize: '🥈 Segundo puesto',
+  secondPrizeDesc: 'Un día de Spa para dos personas',
+  secondPrizeDetail: 'A definir',
+  thirdPrize: '🥉 Tercero puesto',
+  thirdPrizeDesc: 'Una cena para dos personas',
+  thirdPrizeDetail: 'Restaurante a definir',
+  conditions: 'Condiciones',
+  conditionsText: 'Los empleados que resulten ganadores deberán pertenecer a la empresa al momento de recibir el premio. En caso de no cumplir con esta condición, el premio se otorgará al siguiente participante en la tabla de posiciones.',
+  faqs: [
+    { q: '¿Qué es el módulo de Pronósticos Deportivos?', a: 'Es un módulo de Humand que permite a las comunidades crear competencias de pronósticos deportivos, donde los participantes suman puntos y compiten en un ranking.' },
+    { q: '¿Qué es una competencia?', a: 'Es una instancia dentro del módulo en la que un grupo de usuarios participa prediciendo partidos y acumulando puntos según sus aciertos.' },
+    { q: '¿Puedo participar en más de una competencia?', a: 'Sí. Puedes participar en múltiples competencias al mismo tiempo. Cada una funciona de manera independiente y los pronósticos se realizan por competencia, incluso si el partido es el mismo.' },
+    { q: '¿Qué puedo pronosticar en cada partido?', a: 'El marcador final del partido considerando los 90 minutos reglamentarios más el tiempo adicional. En caso de empate, se puede pronosticar qué equipo clasifica. No se considera el marcador exacto de penales.' },
+    { q: '¿Hasta cuándo puedo cargar o modificar un pronóstico?', a: 'Hasta 1 minuto antes del inicio del partido. Una vez iniciado, el pronóstico queda bloqueado y no puede modificarse.' },
+    { q: '¿Puedo ver los pronósticos de otros participantes?', a: 'No. Los pronósticos de otros participantes no son visibles para el resto.' },
+    { q: '¿Cómo se calculan y cuándo se asignan los puntos?', a: 'Los puntos se asignan según el nivel de acierto del pronóstico. Una vez finalizado el partido y cargado el resultado, el sistema asigna los puntos automáticamente.' },
+    { q: '¿Qué son las predicciones especiales y otorgan puntos?', a: 'Son pronósticos adicionales definidos por la competencia, como campeón, subcampeón y tercer puesto. El usuario obtiene puntos adicionales si acierta estas predicciones.' },
+    { q: '¿Cuándo debo hacer las predicciones especiales?', a: 'Antes de que comience la competencia. Una vez iniciada, no se pueden modificar.' },
+    { q: '¿Cómo funciona el ranking?', a: 'El ranking se ordena según la cantidad total de puntos acumulados dentro de la competencia.' },
+    { q: '¿Qué pasa si hay empate en el ranking?', a: 'El sistema puede aplicar criterios de desempate definidos específicamente para la competencia.' },
+    { q: '¿Quién crea y administra una competencia?', a: 'Los administradores de la comunidad crean y administran la competencia, y definen sus reglas y premios.' },
+    { q: '¿Humand gestiona o garantiza premios?', a: 'No, Humand provee el módulo, pero la gestión y entrega de premios es responsabilidad del organizador.' },
+    { q: '¿Los horarios de los partidos están ajustados a mi zona horaria?', a: 'Sí. Los partidos se muestran automáticamente según tu zona horaria.' },
+  ],
+  generalPositions: 'Posiciones generales',
+  participants: '12 participantes',
+  player: 'Jugador',
+  resultsPositive: 'Positivos',
+  resultsExact: 'Exactos',
+  resultLabel: 'Resultados',
+  teamNames: {},
+};
+
+const en: TranslationStrings = {
+  apps: 'Apps',
+  home: 'Home',
+  chats: 'Chats',
+  profile: 'Profile',
+  appNames: {
+    forms: 'Forms & procedures',
+    people: 'People',
+    timeControl: 'Time tracking',
+    orgChart: 'Org chart',
+    files: 'Files',
+    onboarding: 'Onboarding',
+    surveys: 'Surveys',
+    predictions: 'Sports\npredictions',
+    marketplace: 'Marketplace',
+    vacations: 'Time off & leave',
+    performance: 'Performance',
+    agentWorkspace: 'Agent workspace',
+    servicePortal: 'Service portal',
+    learning: 'Learning',
+    goals: 'Goals',
+    peopleExp: 'People experience',
+    events: 'Events',
+    knowledgeLibrary: 'Knowledge library',
+    recommendations: 'Reco...',
+  },
+  selectLanguage: 'Language',
+  sportsPredictions: 'Sports predictions',
+  tabPredictions: 'Predictions',
+  tabRanking: 'Ranking',
+  tabRules: 'Rules',
+  filterUpcoming: 'Upcoming',
+  filterFinished: 'Finished',
+  filterPending: 'Pending prediction',
+  myPrediction: 'My prediction',
+  points: 'Points',
+  pointsLabel: 'Points',
+  ranking: 'Ranking',
+  positionLabel: 'Position',
+  idealPodium: 'Ideal podium',
+  configurePodium: 'Set up your ideal podium',
+  championSuffix: 'champion',
+  modifyUntil: 'Modify until 6/11 3:55 PM',
+  timeUntil: 'You have until 6/11 3:55 PM',
+  pendingPrediction: 'Pending prediction',
+  predictionReady: 'Prediction ready',
+  complete: 'Complete',
+  matches: 'Matches',
+  savePrediction: 'Save prediction',
+  penaltyQuestion: 'Who wins on penalties?',
+  penaltyDescription: 'In knockout matches, you must select the team that will win if the match ends in a draw.',
+  predictionIn: 'Prediction: in case of tiebreak, winner',
+  tieBreaker: 'tiebreak',
+  vs: 'vs',
+  exactResult: 'exact result',
+  matchWinner: 'guess match winner',
+  close: 'Close',
+  pointsExact: '+5 points:',
+  pointsWinner: '+2 points:',
+  wellDone: 'Well done!',
+  allPredictionsComplete: 'You completed all possible predictions.',
+  all: 'All',
+  groupsDate1: 'Groups · Matchday 1',
+  groupsDate2: 'Groups · Matchday 2',
+  groupsDate3: 'Groups · Matchday 3',
+  roundOf32: 'Round of 32',
+  roundOf16: 'Round of 16',
+  quarterFinals: 'Quarter-finals',
+  semiFinals: 'Semi-finals',
+  final: 'Final',
+  matchesTitle: 'Matches',
+  idealPodiumTitle: 'Ideal podium',
+  podiumPrediction: 'Podium prediction',
+  first: '1st',
+  second: '2nd',
+  third: '3rd',
+  team: 'Team',
+  selections: 'Teams',
+  byName: 'By name',
+  saveSelection: 'Save selection',
+  podiumSaved: 'Podium saved successfully!',
+  yourIdealPodium: 'Your ideal podium',
+  champion: 'Champion',
+  secondPlace: 'Runner-up',
+  thirdPlace: 'Third place',
+  canModifyUntil: 'You can modify until 06/11 at 3:55 PM',
+  modifyPodium: 'Modify podium',
+  predictionSaved: 'Prediction saved',
+  rulesAndGame: 'Rules & game',
+  howToPlayAndCompete: 'How to play and compete',
+  details: 'Details',
+  prizes: 'Prizes',
+  faq: 'FAQ',
+  scoringSystem: 'Scoring system',
+  scoringRulesTitle: '🏆 Scoring rules → Prode Humand',
+  whatResultCounts: '1. What result counts',
+  whatResultCountsItems: [
+    'The full match result is taken: 90\' + extra time if applicable.',
+    'Penalties do not count towards the score.',
+    'In knockout rounds, if there are penalties, who qualifies does count.',
+  ],
+  matchScoring: '⚽ Match scoring',
+  matchScoringNote: 'For each match you only earn the highest applicable score (they don\'t stack)',
+  exactScoreTitle: 'A) If you guess the exact score',
+  exactScoreDesc: '12 points → you guess the result and goals of both teams',
+  closeScoreTitle: 'B) If you don\'t guess the exact score, but were close',
+  closeScoreDesc: [
+    '8 points if:',
+    'The match ended in a draw and you also predicted a draw (even if not the same goals), or',
+    'You guessed the winner and also the goal difference (e.g.: actual 3-1 and you put 2-0, both +2 difference)',
+  ],
+  winnerOnlyTitle: 'C) If you only guess the result (winner)',
+  winnerOnlyDesc: '2 points → you exactly guess the goals of one of the two teams (A or B), even if the result was wrong.',
+  winnerOnlyExample: 'E.g.: actual 3-1, prediction 3-0 → earns 2.',
+  nothingRightTitle: 'D) If you don\'t get anything right',
+  nothingRightDesc: '0 points',
+  knockoutBonusTitle: '🥅 Knockout bonus: "Who qualifies"',
+  knockoutBonusItems: [
+    '+ 3 points if you guess who qualifies to the next round',
+    'This bonus is added to the match points.',
+  ],
+  podiumSpecialTitle: '🥇 Special predictions – Tournament podium',
+  podiumSpecialIntro: 'Chosen before the tournament starts and added to the general table:',
+  podiumSpecialItems: ['🥇 Champion: 20 pts', '🥈 Runner-up: 10 pts', '🥉 Third place: 6 pts'],
+  tiebreakerTitle: '🔥 Ranking tiebreaker rules (in order)',
+  tiebreakerIntro: 'If two or more users have the same total score, tiebreak is:',
+  tiebreakerRules: [
+    'More matches with 12 points (exact score)',
+    'More matches with 8 points (close: draw or correct difference)',
+    'More "Who qualifies" hits (+3) in knockout rounds',
+    'More partial hits of 2 points (goals of one team)',
+    'Timestamp of first prediction made (earlier wins)',
+  ],
+  competitionPrizes: 'Competition prizes',
+  firstPrize: '🏆 First place',
+  firstPrizeDesc: 'A trip',
+  firstPrizeDetail: 'Destination TBD',
+  secondPrize: '🥈 Second place',
+  secondPrizeDesc: 'A spa day for two',
+  secondPrizeDetail: 'TBD',
+  thirdPrize: '🥉 Third place',
+  thirdPrizeDesc: 'A dinner for two',
+  thirdPrizeDetail: 'Restaurant TBD',
+  conditions: 'Conditions',
+  conditionsText: 'Winners must be employed at the company at the time of receiving the prize. Otherwise, the prize will be awarded to the next participant in the standings.',
+  faqs: [
+    { q: 'What is the Sports Predictions module?', a: 'It\'s a Humand module that allows communities to create sports prediction competitions, where participants earn points and compete in a ranking.' },
+    { q: 'What is a competition?', a: 'It\'s an instance within the module where a group of users participate by predicting matches and accumulating points based on their accuracy.' },
+    { q: 'Can I participate in more than one competition?', a: 'Yes. You can participate in multiple competitions at the same time. Each one works independently and predictions are made per competition, even if the match is the same.' },
+    { q: 'What can I predict for each match?', a: 'The final score considering 90 regulation minutes plus extra time. In case of a draw, you can predict which team qualifies. Penalty shootout scores are not considered.' },
+    { q: 'Until when can I submit or modify a prediction?', a: 'Until 1 minute before kickoff. Once the match starts, the prediction is locked.' },
+    { q: 'Can I see other participants\' predictions?', a: 'No. Other participants\' predictions are not visible.' },
+    { q: 'How and when are points calculated?', a: 'Points are assigned based on prediction accuracy. Once the match ends and the result is loaded, the system assigns points automatically.' },
+    { q: 'What are special predictions?', a: 'Additional predictions defined by the competition, such as champion, runner-up and third place. Users earn extra points if they get these right.' },
+    { q: 'When should I make special predictions?', a: 'Before the competition begins. Once started, they cannot be modified.' },
+    { q: 'How does the ranking work?', a: 'The ranking is ordered by total accumulated points within the competition.' },
+    { q: 'What happens in case of a ranking tie?', a: 'The system may apply tiebreaker criteria defined specifically for the competition.' },
+    { q: 'Who creates and manages a competition?', a: 'Community administrators create and manage the competition, and define its rules and prizes.' },
+    { q: 'Does Humand manage or guarantee prizes?', a: 'No, Humand provides the module, but prize management and delivery is the organizer\'s responsibility.' },
+    { q: 'Are match times adjusted to my timezone?', a: 'Yes. Matches are automatically displayed according to your timezone.' },
+  ],
+  generalPositions: 'General standings',
+  participants: '12 participants',
+  player: 'Player',
+  resultsPositive: 'Positive',
+  resultsExact: 'Exact',
+  resultLabel: 'Results',
+  teamNames: {},
+};
+
+const it: TranslationStrings = {
+  apps: 'App',
+  home: 'Home',
+  chats: 'Chat',
+  profile: 'Profilo',
+  appNames: {
+    forms: 'Moduli e pratiche',
+    people: 'Persone',
+    timeControl: 'Controllo orario',
+    orgChart: 'Organigramma',
+    files: 'File',
+    onboarding: 'Onboarding',
+    surveys: 'Sondaggi',
+    predictions: 'Pronostici\nsportivi',
+    marketplace: 'Marketplace',
+    vacations: 'Ferie e permessi',
+    performance: 'Prestazioni',
+    agentWorkspace: 'Spazio di lavoro agente',
+    servicePortal: 'Portale servizi',
+    learning: 'Formazione',
+    goals: 'Obiettivi',
+    peopleExp: 'People experience',
+    events: 'Eventi',
+    knowledgeLibrary: 'Libreria della conoscenza',
+    recommendations: 'Raco...',
+  },
+  selectLanguage: 'Lingua',
+  sportsPredictions: 'Pronostici sportivi',
+  tabPredictions: 'Pronostici',
+  tabRanking: 'Classifica',
+  tabRules: 'Regolamento',
+  filterUpcoming: 'Da giocare',
+  filterFinished: 'Terminati',
+  filterPending: 'Pronostico mancante',
+  myPrediction: 'Il mio pronostico',
+  points: 'Punti',
+  pointsLabel: 'Punti',
+  ranking: 'Classifica',
+  positionLabel: 'Posizione',
+  idealPodium: 'Podio ideale',
+  configurePodium: 'Configura il tuo podio ideale',
+  championSuffix: 'campione',
+  modifyUntil: 'Modificabile fino all\'11/6 15:55',
+  timeUntil: 'Hai tempo fino all\'11/6 15:55',
+  pendingPrediction: 'Pronostico mancante',
+  predictionReady: 'Pronostico pronto',
+  complete: 'Completare',
+  matches: 'Partite',
+  savePrediction: 'Salva pronostico',
+  penaltyQuestion: 'Chi vince ai rigori?',
+  penaltyDescription: 'Nelle partite a eliminazione diretta, devi selezionare la squadra che vincerà se la partita finisce in pareggio.',
+  predictionIn: 'Previsione: in caso di spareggio, vincitore',
+  tieBreaker: 'spareggio',
+  vs: 'vs',
+  exactResult: 'risultato esatto',
+  matchWinner: 'indovinare il vincitore',
+  close: 'Chiudi',
+  pointsExact: '+5 punti:',
+  pointsWinner: '+2 punti:',
+  wellDone: 'Ben fatto!',
+  allPredictionsComplete: 'Hai completato tutti i pronostici possibili.',
+  all: 'Tutti',
+  groupsDate1: 'Gironi · Giornata 1',
+  groupsDate2: 'Gironi · Giornata 2',
+  groupsDate3: 'Gironi · Giornata 3',
+  roundOf32: 'Sedicesimi',
+  roundOf16: 'Ottavi',
+  quarterFinals: 'Quarti',
+  semiFinals: 'Semifinali',
+  final: 'Finale',
+  matchesTitle: 'Partite',
+  idealPodiumTitle: 'Podio ideale',
+  podiumPrediction: 'Pronostico podio',
+  first: '1°',
+  second: '2°',
+  third: '3°',
+  team: 'Squadra',
+  selections: 'Nazionali',
+  byName: 'Per nome',
+  saveSelection: 'Salva selezione',
+  podiumSaved: 'Podio salvato correttamente!',
+  yourIdealPodium: 'Il tuo podio ideale',
+  champion: 'Campione',
+  secondPlace: 'Secondo posto',
+  thirdPlace: 'Terzo posto',
+  canModifyUntil: 'Puoi modificarlo fino all\'11/06 alle 15:55',
+  modifyPodium: 'Modifica podio',
+  predictionSaved: 'Pronostico salvato',
+  rulesAndGame: 'Regole e gioco',
+  howToPlayAndCompete: 'Come giocare e competere',
+  details: 'Dettagli',
+  prizes: 'Premi',
+  faq: 'Domande frequenti',
+  scoringSystem: 'Sistema di punteggio',
+  scoringRulesTitle: '🏆 Regole di punteggio → Prode Humand',
+  whatResultCounts: '1. Quale risultato conta',
+  whatResultCountsItems: [
+    'Si prende il risultato completo della partita: 90\' + supplementari se presenti.',
+    'I rigori non contano per il punteggio.',
+    'In eliminazione diretta, se ci sono rigori, conta chi si qualifica.',
+  ],
+  matchScoring: '⚽ Punteggio per partita',
+  matchScoringNote: 'Per ogni partita guadagni solo il punteggio più alto applicabile (non si sommano)',
+  exactScoreTitle: 'A) Se indovini il punteggio esatto',
+  exactScoreDesc: '12 punti → indovini il risultato e i gol di entrambe le squadre',
+  closeScoreTitle: 'B) Se non indovini il punteggio esatto, ma ci sei andato vicino',
+  closeScoreDesc: [
+    '8 punti se:',
+    'La partita è finita in pareggio e anche tu hai pronosticato pareggio, oppure',
+    'Hai indovinato il vincitore e anche la differenza gol (es: reale 3-1 e hai messo 2-0, entrambi +2)',
+  ],
+  winnerOnlyTitle: 'C) Se indovini solo il risultato (vincitore)',
+  winnerOnlyDesc: '2 punti → indovini esattamente i gol di una delle due squadre, anche se il risultato era sbagliato.',
+  winnerOnlyExample: 'Es: reale 3-1, pronostico 3-0 → guadagna 2.',
+  nothingRightTitle: 'D) Se non indovini nulla',
+  nothingRightDesc: '0 punti',
+  knockoutBonusTitle: '🥅 Bonus eliminazione diretta: "Chi si qualifica"',
+  knockoutBonusItems: [
+    '+ 3 punti se indovini chi si qualifica al turno successivo',
+    'Questo bonus si aggiunge ai punti della partita.',
+  ],
+  podiumSpecialTitle: '🥇 Pronostici speciali – Podio del torneo',
+  podiumSpecialIntro: 'Scelti prima dell\'inizio del torneo e aggiunti alla classifica generale:',
+  podiumSpecialItems: ['🥇 Campione: 20 pts', '🥈 Vice-campione: 10 pts', '🥉 Terzo posto: 6 pts'],
+  tiebreakerTitle: '🔥 Regole di spareggio classifica (in ordine)',
+  tiebreakerIntro: 'Se due o più utenti hanno lo stesso punteggio totale, lo spareggio è:',
+  tiebreakerRules: [
+    'Più partite con 12 punti (punteggio esatto)',
+    'Più partite con 8 punti (vicini: pareggio o differenza corretta)',
+    'Più "Chi si qualifica" (+3) in eliminazione diretta',
+    'Più risultati parziali da 2 punti (gol di una squadra)',
+    'Timestamp del primo pronostico fatto (prima vince)',
+  ],
+  competitionPrizes: 'Premi della competizione',
+  firstPrize: '🏆 Primo posto',
+  firstPrizeDesc: 'Un viaggio',
+  firstPrizeDetail: 'Destinazione da definire',
+  secondPrize: '🥈 Secondo posto',
+  secondPrizeDesc: 'Una giornata Spa per due persone',
+  secondPrizeDetail: 'Da definire',
+  thirdPrize: '🥉 Terzo posto',
+  thirdPrizeDesc: 'Una cena per due persone',
+  thirdPrizeDetail: 'Ristorante da definire',
+  conditions: 'Condizioni',
+  conditionsText: 'I dipendenti vincitori devono appartenere all\'azienda al momento di ricevere il premio. In caso contrario, il premio sarà assegnato al partecipante successivo in classifica.',
+  faqs: [
+    { q: 'Cos\'è il modulo Pronostici Sportivi?', a: 'È un modulo di Humand che permette alle comunità di creare competizioni di pronostici sportivi, dove i partecipanti guadagnano punti e competono in una classifica.' },
+    { q: 'Cos\'è una competizione?', a: 'È un\'istanza all\'interno del modulo dove un gruppo di utenti partecipa prevedendo le partite e accumulando punti in base alla loro precisione.' },
+    { q: 'Posso partecipare a più di una competizione?', a: 'Sì. Puoi partecipare a più competizioni contemporaneamente. Ognuna funziona indipendentemente.' },
+    { q: 'Cosa posso pronosticare per ogni partita?', a: 'Il punteggio finale considerando 90 minuti regolamentari più i supplementari. In caso di pareggio, puoi pronosticare quale squadra si qualifica.' },
+    { q: 'Fino a quando posso inserire o modificare un pronostico?', a: 'Fino a 1 minuto prima del calcio d\'inizio. Una volta iniziata la partita, il pronostico è bloccato.' },
+    { q: 'Posso vedere i pronostici degli altri partecipanti?', a: 'No. I pronostici degli altri partecipanti non sono visibili.' },
+    { q: 'Come e quando vengono calcolati i punti?', a: 'I punti vengono assegnati in base alla precisione del pronostico. Una volta terminata la partita e caricato il risultato, il sistema assegna i punti automaticamente.' },
+    { q: 'Cosa sono le previsioni speciali?', a: 'Pronostici aggiuntivi come campione, vice-campione e terzo posto. L\'utente guadagna punti extra se li indovina.' },
+    { q: 'Quando devo fare le previsioni speciali?', a: 'Prima dell\'inizio della competizione. Una volta iniziata, non possono essere modificate.' },
+    { q: 'Come funziona la classifica?', a: 'La classifica è ordinata per punti totali accumulati nella competizione.' },
+    { q: 'Cosa succede in caso di parità in classifica?', a: 'Il sistema può applicare criteri di spareggio definiti per la competizione.' },
+    { q: 'Chi crea e gestisce una competizione?', a: 'Gli amministratori della comunità creano e gestiscono la competizione e ne definiscono regole e premi.' },
+    { q: 'Humand gestisce o garantisce i premi?', a: 'No, Humand fornisce il modulo, ma la gestione e la consegna dei premi è responsabilità dell\'organizzatore.' },
+    { q: 'Gli orari delle partite sono adattati al mio fuso orario?', a: 'Sì. Le partite vengono mostrate automaticamente secondo il tuo fuso orario.' },
+  ],
+  generalPositions: 'Classifica generale',
+  participants: '12 partecipanti',
+  player: 'Giocatore',
+  resultsPositive: 'Positivi',
+  resultsExact: 'Esatti',
+  resultLabel: 'Risultati',
+  teamNames: {},
+};
+
+const bg: TranslationStrings = {
+  apps: 'Приложения',
+  home: 'Начало',
+  chats: 'Чатове',
+  profile: 'Профил',
+  appNames: {
+    forms: 'Формуляри и процедури',
+    people: 'Хора',
+    timeControl: 'Контрол на времето',
+    orgChart: 'Органиграма',
+    files: 'Файлове',
+    onboarding: 'Въвеждане',
+    surveys: 'Анкети',
+    predictions: 'Спортни\nпрогнози',
+    marketplace: 'Маркетплейс',
+    vacations: 'Отпуски и разрешения',
+    performance: 'Представяне',
+    agentWorkspace: 'Работно пространство на агента',
+    servicePortal: 'Портал за услуги',
+    learning: 'Обучение',
+    goals: 'Цели',
+    peopleExp: 'People experience',
+    events: 'Събития',
+    knowledgeLibrary: 'Библиотека за знания',
+    recommendations: 'Реко...',
+  },
+  selectLanguage: 'Език',
+  sportsPredictions: 'Спортни прогнози',
+  tabPredictions: 'Прогнози',
+  tabRanking: 'Класиране',
+  tabRules: 'Правила',
+  filterUpcoming: 'Предстоящи',
+  filterFinished: 'Завършени',
+  filterPending: 'Чакаща прогноза',
+  myPrediction: 'Моята прогноза',
+  points: 'Точки',
+  pointsLabel: 'Точки',
+  ranking: 'Класиране',
+  positionLabel: 'Позиция',
+  idealPodium: 'Идеален подиум',
+  configurePodium: 'Настрой идеалния си подиум',
+  championSuffix: 'шампион',
+  modifyUntil: 'Промени до 11/6 15:55 ч',
+  timeUntil: 'Имаш време до 11/6 15:55 ч',
+  pendingPrediction: 'Чакаща прогноза',
+  predictionReady: 'Прогнозата е готова',
+  complete: 'Попълни',
+  matches: 'Мачове',
+  savePrediction: 'Запази прогнозата',
+  penaltyQuestion: 'Кой печели при дузпи?',
+  penaltyDescription: 'В елиминационни мачове трябва да изберете отбора, който ще спечели, ако мачът завърши наравно.',
+  predictionIn: 'Прогноза: при равен резултат, победител',
+  tieBreaker: 'равен резултат',
+  vs: 'срещу',
+  exactResult: 'точен резултат',
+  matchWinner: 'позна победителя в мача',
+  close: 'Затвори',
+  pointsExact: '+5 точки:',
+  pointsWinner: '+2 точки:',
+  wellDone: 'Браво!',
+  allPredictionsComplete: 'Завършихте всички възможни прогнози.',
+  all: 'Всички',
+  groupsDate1: 'Групи · Кръг 1',
+  groupsDate2: 'Групи · Кръг 2',
+  groupsDate3: 'Групи · Кръг 3',
+  roundOf32: '1/16 финали',
+  roundOf16: '1/8 финали',
+  quarterFinals: 'Четвъртфинали',
+  semiFinals: 'Полуфинали',
+  final: 'Финал',
+  matchesTitle: 'Мачове',
+  idealPodiumTitle: 'Идеален подиум',
+  podiumPrediction: 'Прогноза за подиума',
+  first: '1-ви',
+  second: '2-ри',
+  third: '3-ти',
+  team: 'Отбор',
+  selections: 'Отбори',
+  byName: 'По име',
+  saveSelection: 'Запази избора',
+  podiumSaved: 'Подиумът е запазен успешно!',
+  yourIdealPodium: 'Твоят идеален подиум',
+  champion: 'Шампион',
+  secondPlace: 'Второ място',
+  thirdPlace: 'Трето място',
+  canModifyUntil: 'Можеш да го промениш до 11/06 в 15:55 ч',
+  modifyPodium: 'Промени подиума',
+  predictionSaved: 'Прогнозата е запазена',
+  rulesAndGame: 'Правила и игра',
+  howToPlayAndCompete: 'Как да играеш и да се състезаваш',
+  details: 'Детайли',
+  prizes: 'Награди',
+  faq: 'Често задавани въпроси',
+  scoringSystem: 'Система за точкуване',
+  scoringRulesTitle: '🏆 Правила за точкуване → Prode Humand',
+  whatResultCounts: '1. Какъв резултат се взима предвид',
+  whatResultCountsItems: [
+    'Взима се пълният резултат от мача: 90\' + продължения ако има.',
+    'Дузпите не се броят за резултата.',
+    'В елиминационни кръгове, ако има дузпи, се брои кой се класира.',
+  ],
+  matchScoring: '⚽ Точкуване по мач',
+  matchScoringNote: 'За всеки мач печелиш само най-високия приложим резултат (не се сумират)',
+  exactScoreTitle: 'A) Ако познаеш точния резултат',
+  exactScoreDesc: '12 точки → познаваш резултата и головете на двата отбора',
+  closeScoreTitle: 'Б) Ако не познаеш точния резултат, но си бил близо',
+  closeScoreDesc: [
+    '8 точки ако:',
+    'Мачът е завършил наравно и ти също си прогнозирал равенство, или',
+    'Познал си победителя и голевата разлика (напр.: реално 3-1 и ти си сложил 2-0, и двете +2)',
+  ],
+  winnerOnlyTitle: 'В) Ако познаеш само резултата (победител)',
+  winnerOnlyDesc: '2 точки → познаваш точно головете на един от двата отбора, дори резултатът да е грешен.',
+  winnerOnlyExample: 'Напр.: реално 3-1, прогноза 3-0 → печели 2.',
+  nothingRightTitle: 'Г) Ако не познаеш нищо',
+  nothingRightDesc: '0 точки',
+  knockoutBonusTitle: '🥅 Бонус при елиминации: "Кой се класира"',
+  knockoutBonusItems: [
+    '+ 3 точки ако познаеш кой се класира за следващия кръг',
+    'Този бонус се добавя към точките от мача.',
+  ],
+  podiumSpecialTitle: '🥇 Специални прогнози – Подиум на турнира',
+  podiumSpecialIntro: 'Избират се преди началото на турнира и се добавят към общото класиране:',
+  podiumSpecialItems: ['🥇 Шампион: 20 т.', '🥈 Подгласник: 10 т.', '🥉 Трето място: 6 т.'],
+  tiebreakerTitle: '🔥 Правила за разрешаване на равенство (по ред)',
+  tiebreakerIntro: 'Ако двама или повече потребители имат еднакъв общ резултат:',
+  tiebreakerRules: [
+    'Повече мачове с 12 точки (точен резултат)',
+    'Повече мачове с 8 точки (близки: равенство или правилна разлика)',
+    'Повече познати "Кой се класира" (+3) в елиминациите',
+    'Повече частични попадения от 2 точки (голове на един отбор)',
+    'Времеви печат на първата направена прогноза (по-ранната печели)',
+  ],
+  competitionPrizes: 'Награди от състезанието',
+  firstPrize: '🏆 Първо място',
+  firstPrizeDesc: 'Пътуване',
+  firstPrizeDetail: 'Дестинация предстои да бъде определена',
+  secondPrize: '🥈 Второ място',
+  secondPrizeDesc: 'Ден в спа за двама',
+  secondPrizeDetail: 'Предстои да бъде определено',
+  thirdPrize: '🥉 Трето място',
+  thirdPrizeDesc: 'Вечеря за двама',
+  thirdPrizeDetail: 'Ресторант предстои да бъде определен',
+  conditions: 'Условия',
+  conditionsText: 'Победителите трябва да бъдат служители на компанията към момента на получаване на наградата. В противен случай наградата се присъжда на следващия участник в класирането.',
+  faqs: [
+    { q: 'Какво е модулът за спортни прогнози?', a: 'Това е модул на Humand, който позволява на общностите да създават състезания за спортни прогнози, където участниците печелят точки и се състезават в класиране.' },
+    { q: 'Какво е състезание?', a: 'Инстанция в модула, където група потребители участват, като прогнозират мачове и натрупват точки.' },
+    { q: 'Мога ли да участвам в повече от едно състезание?', a: 'Да. Можеш да участваш в множество състезания едновременно. Всяко работи независимо.' },
+    { q: 'Какво мога да прогнозирам за всеки мач?', a: 'Крайния резултат, като се вземат предвид 90 минути плюс допълнително време. При равенство можеш да прогнозираш кой отбор се класира.' },
+    { q: 'До кога мога да подам или променя прогноза?', a: 'До 1 минута преди началото на мача. След началото прогнозата е заключена.' },
+    { q: 'Мога ли да виждам прогнозите на другите участници?', a: 'Не. Прогнозите на другите участници не са видими.' },
+    { q: 'Как и кога се изчисляват точките?', a: 'Точките се присъждат въз основа на точността на прогнозата. След края на мача системата присъжда точките автоматично.' },
+    { q: 'Какво са специалните прогнози?', a: 'Допълнителни прогнози като шампион, подгласник и трето място. Потребителят печели допълнителни точки, ако ги познае.' },
+    { q: 'Кога трябва да направя специалните прогнози?', a: 'Преди началото на състезанието. След стартирането не могат да бъдат променяни.' },
+    { q: 'Как работи класирането?', a: 'Класирането се подрежда по общите натрупани точки в състезанието.' },
+    { q: 'Какво става при равенство в класирането?', a: 'Системата може да приложи критерии за разрешаване на равенство.' },
+    { q: 'Кой създава и управлява състезание?', a: 'Администраторите на общността създават и управляват състезанието и определят правилата и наградите.' },
+    { q: 'Humand управлява ли или гарантира ли награди?', a: 'Не, Humand предоставя модула, но управлението и раздаването на награди е отговорност на организатора.' },
+    { q: 'Часовете на мачовете съобразени ли са с моята часова зона?', a: 'Да. Мачовете се показват автоматично според вашата часова зона.' },
+  ],
+  generalPositions: 'Генерално класиране',
+  participants: '12 участника',
+  player: 'Играч',
+  resultsPositive: 'Положителни',
+  resultsExact: 'Точни',
+  resultLabel: 'Резултати',
+  teamNames: {},
+};
+
+const pt: TranslationStrings = {
+  apps: 'Apps',
+  home: 'Início',
+  chats: 'Chats',
+  profile: 'Perfil',
+  appNames: {
+    forms: 'Formulários e trâmites',
+    people: 'Pessoas',
+    timeControl: 'Controle de horário',
+    orgChart: 'Organograma',
+    files: 'Arquivos',
+    onboarding: 'Onboarding',
+    surveys: 'Pesquisas',
+    predictions: 'Palpites\nesportivos',
+    marketplace: 'Marketplace',
+    vacations: 'Férias e licenças',
+    performance: 'Desempenho',
+    agentWorkspace: 'Espaço de trabalho do agente',
+    servicePortal: 'Portal de serviços',
+    learning: 'Aprendizagem',
+    goals: 'Objetivos',
+    peopleExp: 'People experience',
+    events: 'Eventos',
+    knowledgeLibrary: 'Biblioteca de conhecimento',
+    recommendations: 'Reco...',
+  },
+  selectLanguage: 'Idioma',
+  sportsPredictions: 'Palpites esportivos',
+  tabPredictions: 'Palpites',
+  tabRanking: 'Ranking',
+  tabRules: 'Regulamento',
+  filterUpcoming: 'A jogar',
+  filterFinished: 'Finalizados',
+  filterPending: 'Palpite pendente',
+  myPrediction: 'Meu palpite',
+  points: 'Pontos',
+  pointsLabel: 'Pontos',
+  ranking: 'Ranking',
+  positionLabel: 'Posição',
+  idealPodium: 'Pódio ideal',
+  configurePodium: 'Configure seu pódio ideal',
+  championSuffix: 'campeão',
+  modifyUntil: 'Modifique até 11/6 15:55',
+  timeUntil: 'Você tem até 11/6 15:55',
+  pendingPrediction: 'Palpite pendente',
+  predictionReady: 'Palpite pronto',
+  complete: 'Completar',
+  matches: 'Jogos',
+  savePrediction: 'Salvar palpite',
+  penaltyQuestion: 'Quem vence nos pênaltis?',
+  penaltyDescription: 'Em jogos eliminatórios, você deve selecionar o time que vencerá se o jogo terminar empatado.',
+  predictionIn: 'Previsão: em caso de desempate, vencedor',
+  tieBreaker: 'desempate',
+  vs: 'vs',
+  exactResult: 'resultado exato',
+  matchWinner: 'acertar o vencedor do jogo',
+  close: 'Fechar',
+  pointsExact: '+5 pontos:',
+  pointsWinner: '+2 pontos:',
+  wellDone: 'Muito bem!',
+  allPredictionsComplete: 'Você completou todos os palpites possíveis.',
+  all: 'Todos',
+  groupsDate1: 'Grupos · Rodada 1',
+  groupsDate2: 'Grupos · Rodada 2',
+  groupsDate3: 'Grupos · Rodada 3',
+  roundOf32: 'Oitavas (32)',
+  roundOf16: 'Oitavas',
+  quarterFinals: 'Quartas',
+  semiFinals: 'Semifinais',
+  final: 'Final',
+  matchesTitle: 'Jogos',
+  idealPodiumTitle: 'Pódio ideal',
+  podiumPrediction: 'Previsão do pódio',
+  first: '1º',
+  second: '2º',
+  third: '3º',
+  team: 'Time',
+  selections: 'Seleções',
+  byName: 'Por nome',
+  saveSelection: 'Salvar seleção',
+  podiumSaved: 'Pódio salvo com sucesso!',
+  yourIdealPodium: 'Seu pódio ideal',
+  champion: 'Campeão',
+  secondPlace: 'Vice-campeão',
+  thirdPlace: 'Terceiro lugar',
+  canModifyUntil: 'Você pode modificá-lo até 11/06 às 15:55',
+  modifyPodium: 'Modificar pódio',
+  predictionSaved: 'Palpite salvo',
+  rulesAndGame: 'Regras e jogo',
+  howToPlayAndCompete: 'Como jogar e competir',
+  details: 'Detalhes',
+  prizes: 'Prêmios',
+  faq: 'Perguntas frequentes',
+  scoringSystem: 'Sistema de pontuação',
+  scoringRulesTitle: '🏆 Regras de pontuação → Prode Humand',
+  whatResultCounts: '1. Qual resultado conta',
+  whatResultCountsItems: [
+    'Conta o resultado completo do jogo: 90\' + prorrogação se houver.',
+    'Pênaltis não contam para o placar.',
+    'Em eliminatórias, se houver pênaltis, conta quem se classifica.',
+  ],
+  matchScoring: '⚽ Pontuação por jogo',
+  matchScoringNote: 'Para cada jogo você ganha apenas a maior pontuação aplicável (não se somam)',
+  exactScoreTitle: 'A) Se você acertar o placar exato',
+  exactScoreDesc: '12 pontos → acerta o resultado e os gols de ambos os times',
+  closeScoreTitle: 'B) Se não acertar o placar exato, mas chegou perto',
+  closeScoreDesc: [
+    '8 pontos se:',
+    'O jogo terminou empatado e você também palpitou empate, ou',
+    'Acertou o vencedor e também o saldo de gols (ex: real 3-1 e você colocou 2-0, ambos +2)',
+  ],
+  winnerOnlyTitle: 'C) Se acertar apenas o resultado (vencedor)',
+  winnerOnlyDesc: '2 pontos → acerta exatamente os gols de um dos dois times, mesmo que o resultado esteja errado.',
+  winnerOnlyExample: 'Ex: real 3-1, palpite 3-0 → ganha 2.',
+  nothingRightTitle: 'D) Se não acertar nada',
+  nothingRightDesc: '0 pontos',
+  knockoutBonusTitle: '🥅 Bônus eliminatórias: "Quem se classifica"',
+  knockoutBonusItems: [
+    '+ 3 pontos se acertar quem se classifica para a próxima fase',
+    'Este bônus é somado aos pontos do jogo.',
+  ],
+  podiumSpecialTitle: '🥇 Palpites especiais – Pódio do torneio',
+  podiumSpecialIntro: 'Escolhidos antes do início do torneio e somados à classificação geral:',
+  podiumSpecialItems: ['🥇 Campeão: 20 pts', '🥈 Vice-campeão: 10 pts', '🥉 Terceiro lugar: 6 pts'],
+  tiebreakerTitle: '🔥 Regras de desempate do ranking (em ordem)',
+  tiebreakerIntro: 'Se dois ou mais usuários empatarem na pontuação total:',
+  tiebreakerRules: [
+    'Mais jogos com 12 pontos (placar exato)',
+    'Mais jogos com 8 pontos (próximos: empate ou diferença correta)',
+    'Mais acertos de "Quem se classifica" (+3) nas eliminatórias',
+    'Mais acertos parciais de 2 pontos (gols de um time)',
+    'Timestamp do primeiro palpite feito (mais cedo vence)',
+  ],
+  competitionPrizes: 'Prêmios da competição',
+  firstPrize: '🏆 Primeiro lugar',
+  firstPrizeDesc: 'Uma viagem',
+  firstPrizeDetail: 'Destino a definir',
+  secondPrize: '🥈 Segundo lugar',
+  secondPrizeDesc: 'Um dia de Spa para duas pessoas',
+  secondPrizeDetail: 'A definir',
+  thirdPrize: '🥉 Terceiro lugar',
+  thirdPrizeDesc: 'Um jantar para duas pessoas',
+  thirdPrizeDetail: 'Restaurante a definir',
+  conditions: 'Condições',
+  conditionsText: 'Os funcionários vencedores devem pertencer à empresa no momento de receber o prêmio. Caso contrário, o prêmio será concedido ao próximo participante na classificação.',
+  faqs: [
+    { q: 'O que é o módulo de Palpites Esportivos?', a: 'É um módulo do Humand que permite às comunidades criar competições de palpites esportivos, onde os participantes ganham pontos e competem em um ranking.' },
+    { q: 'O que é uma competição?', a: 'É uma instância dentro do módulo onde um grupo de usuários participa prevendo jogos e acumulando pontos.' },
+    { q: 'Posso participar de mais de uma competição?', a: 'Sim. Você pode participar de várias competições ao mesmo tempo. Cada uma funciona independentemente.' },
+    { q: 'O que posso palpitar em cada jogo?', a: 'O placar final considerando 90 minutos regulamentares mais prorrogação. Em caso de empate, você pode palpitar qual time se classifica.' },
+    { q: 'Até quando posso enviar ou modificar um palpite?', a: 'Até 1 minuto antes do início do jogo. Uma vez iniciado, o palpite fica bloqueado.' },
+    { q: 'Posso ver os palpites de outros participantes?', a: 'Não. Os palpites dos outros participantes não são visíveis.' },
+    { q: 'Como e quando os pontos são calculados?', a: 'Os pontos são atribuídos com base na precisão do palpite. Após o término do jogo, o sistema atribui os pontos automaticamente.' },
+    { q: 'O que são previsões especiais?', a: 'Palpites adicionais como campeão, vice-campeão e terceiro lugar. O usuário ganha pontos extras se acertar.' },
+    { q: 'Quando devo fazer as previsões especiais?', a: 'Antes do início da competição. Depois de iniciada, não podem ser modificadas.' },
+    { q: 'Como funciona o ranking?', a: 'O ranking é ordenado pela quantidade total de pontos acumulados na competição.' },
+    { q: 'O que acontece em caso de empate no ranking?', a: 'O sistema pode aplicar critérios de desempate definidos para a competição.' },
+    { q: 'Quem cria e administra uma competição?', a: 'Os administradores da comunidade criam e administram a competição, e definem suas regras e prêmios.' },
+    { q: 'O Humand gerencia ou garante prêmios?', a: 'Não, o Humand fornece o módulo, mas a gestão e entrega dos prêmios é responsabilidade do organizador.' },
+    { q: 'Os horários dos jogos estão ajustados ao meu fuso horário?', a: 'Sim. Os jogos são exibidos automaticamente de acordo com seu fuso horário.' },
+  ],
+  generalPositions: 'Classificação geral',
+  participants: '12 participantes',
+  player: 'Jogador',
+  resultsPositive: 'Positivos',
+  resultsExact: 'Exatos',
+  resultLabel: 'Resultados',
+  teamNames: {},
+};
+
+export const translations: Record<Language, TranslationStrings> = { es, en, it, bg, pt };
