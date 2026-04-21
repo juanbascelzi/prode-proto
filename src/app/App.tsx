@@ -135,11 +135,6 @@ const MatchCard = ({ match, onClick }: { match: any, onClick: () => void }) => {
             <span className="text-[12px] font-bold text-[#303036] text-center">{match.team2}</span>
           </div>
         </div>
-        
-        <p className="text-[10px] text-[#303036] text-center font-normal leading-tight">
-          <span className="font-bold">{match.group.split(' · ')[0]} ·</span>
-          {` ${match.group.split(' · ')[1]}`}
-        </p>
       </div>
     );
   }
@@ -202,9 +197,6 @@ const MatchCard = ({ match, onClick }: { match: any, onClick: () => void }) => {
           </p>
         </div>
       )}
-
-      <div className="w-full h-px bg-[#eeeef1] mt-2 opacity-60" />
-      <p className="text-[11px] text-[#636271] text-center mt-2 opacity-80">{match.group}</p>
     </div>
   );
 };
