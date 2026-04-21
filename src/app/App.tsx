@@ -154,7 +154,7 @@ const MatchCard = ({ match, onClick }: { match: any, onClick: () => void }) => {
           <CheckIcon className="w-3 h-3 text-[#1F622C]" strokeWidth={4} />
         </div>
       )}
-      <div className="flex items-center justify-between gap-2 mt-4">
+      <div className="flex items-center justify-between gap-2 mt-2">
         <div className="flex flex-col items-center gap-2 flex-1">
           <div className="relative inline-block">
             <span className="text-3xl leading-none">{match.flag1}</span>
