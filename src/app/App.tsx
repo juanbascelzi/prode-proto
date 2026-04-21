@@ -99,7 +99,7 @@ const MatchCard = ({ match, onClick }: { match: any, onClick: () => void }) => {
       <div 
         id={`match-card-${match.id}`}
         onClick={onClick}
-        className="bg-white rounded-[16px] border border-[#eeeef1] p-[16px] flex flex-col gap-[16px] w-full max-w-[360px] transition-all cursor-pointer active:scale-[0.98] hover:shadow-sm"
+        className="bg-white rounded-[16px] border border-[#eeeef1] p-[16px] flex flex-col gap-[16px] w-full transition-all cursor-pointer active:scale-[0.98] hover:shadow-sm"
       >
         <div className="flex justify-between items-center h-[24px]">
           <div className="px-2 py-1 rounded-[16px] border border-[#eeeef1] bg-white">
@@ -143,7 +143,7 @@ const MatchCard = ({ match, onClick }: { match: any, onClick: () => void }) => {
     <div 
       id={`match-card-${match.id}`}
       onClick={onClick}
-      className={`relative rounded-[16px] border p-4 flex flex-col gap-2 w-full max-w-[360px] cursor-pointer transition-all active:scale-[0.98] ${
+      className={`relative rounded-[16px] border p-4 flex flex-col gap-2 w-full cursor-pointer transition-all active:scale-[0.98] ${
         hasScore 
           ? "bg-white border-[#CFF6D5] hover:border-[#A5E8B1]" 
           : "bg-white border-[#FBEC9E] hover:border-[#f9e27a]"
