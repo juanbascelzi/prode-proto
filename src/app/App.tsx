@@ -50,31 +50,31 @@ const INITIAL_MATCHES = [
   {
     date: "Jueves 11/6",
     matches: [
-      { id: 1, time: "16:00", team1: "México", flag1: "🇲🇽", team2: "Sudáfrica", flag2: "🇿🇦", group: "Grupo A · Estadio Azteca, Ciudad de México, México", score1: "", score2: "", status: "por jugar" },
-      { id: 2, time: "23:00", team1: "C. del Sur", flag1: "🇰🇷", team2: "TBD", flag2: "🏳️", group: "Grupo C · Estadio Akron, Guadalajara, México", score1: "", score2: "", status: "por jugar" }
+      { id: 1, time: "16:00", team1: "MEX", flag1: "🇲🇽", team2: "RSA", flag2: "🇿🇦", group: "Grupo A · Estadio Azteca, Ciudad de México, México", score1: "", score2: "", status: "por jugar" },
+      { id: 2, time: "23:00", team1: "KOR", flag1: "🇰🇷", team2: "TBD", flag2: "🏳️", group: "Grupo C · Estadio Akron, Guadalajara, México", score1: "", score2: "", status: "por jugar" }
     ]
   },
   {
     date: "Viernes 12/6",
     matches: [
-      { id: 10, time: "Finalizado", team1: "México", flag1: "🇲🇽", team2: "Sudáfrica", flag2: "🇿🇦", group: "Grupo A · Estadio Azteca, Ciudad de México, México", score1: "2", score2: "1", finalScore1: "2", finalScore2: "1", points: "7", status: "finalizado" },
-      { id: 3, time: "16:00", team1: "Canadá", flag1: "🇨🇦", team2: "TBD", flag2: "🏳️", group: "Grupo B · BMO Field, Toronto, Canadá", score1: "", score2: "", status: "por jugar" },
-      { id: 4, time: "22:00", team1: "USA", flag1: "🇺🇸", team2: "Paraguay", flag2: "🇵🇾", group: "Grupo D · SoFi Stadium, Los Ángeles, USA", score1: "", score2: "", status: "por jugar" }
+      { id: 10, time: "Finalizado", team1: "MEX", flag1: "🇲🇽", team2: "RSA", flag2: "🇿🇦", group: "Grupo A · Estadio Azteca, Ciudad de México, México", score1: "2", score2: "1", finalScore1: "2", finalScore2: "1", points: "7", status: "finalizado" },
+      { id: 3, time: "16:00", team1: "CAN", flag1: "🇨🇦", team2: "TBD", flag2: "🏳️", group: "Grupo B · BMO Field, Toronto, Canadá", score1: "", score2: "", status: "por jugar" },
+      { id: 4, time: "22:00", team1: "USA", flag1: "🇺🇸", team2: "PAR", flag2: "🇵🇾", group: "Grupo D · SoFi Stadium, Los Ángeles, USA", score1: "", score2: "", status: "por jugar" }
     ]
   },
   {
     date: "Sábado 13/6",
     matches: [
-      { id: 11, time: "Finalizado", team1: "Argentina", flag1: "🇦🇷", team2: "Arabia Saudita", flag2: "🇸🇦", group: "Grupo C · Lusail Stadium", score1: "1", score2: "2", finalScore1: "1", finalScore2: "2", points: "0", status: "finalizado" },
-      { id: 5, time: "16:00", team1: "Qatar", flag1: "🇶🇦", team2: "Suiza", flag2: "🇨🇭", group: "Grupo B · Levi's Stadium, California, USA", score1: "", score2: "", status: "por jugar" },
-      { id: 6, time: "19:00", team1: "Brasil", flag1: "🇧🇷", team2: "Marruecos", flag2: "🇲🇦", group: "Grupo C · MetLife Stadium, East Rutherford, USA", score1: "", score2: "", status: "por jugar" },
-      { id: 7, time: "22:00", team1: "Haití", flag1: "🇭🇹", team2: "Marruecos", flag2: "🇲🇦", group: "Grupo C · Gillette Stadium, Boston, USA", score1: "", score2: "", status: "por jugar" }
+      { id: 11, time: "Finalizado", team1: "ARG", flag1: "🇦🇷", team2: "KSA", flag2: "🇸🇦", group: "Grupo C · Lusail Stadium", score1: "1", score2: "2", finalScore1: "1", finalScore2: "2", points: "0", status: "finalizado" },
+      { id: 5, time: "16:00", team1: "QAT", flag1: "🇶🇦", team2: "SUI", flag2: "🇨🇭", group: "Grupo B · Levi's Stadium, California, USA", score1: "", score2: "", status: "por jugar" },
+      { id: 6, time: "19:00", team1: "BRA", flag1: "🇧🇷", team2: "MAR", flag2: "🇲🇦", group: "Grupo C · MetLife Stadium, East Rutherford, USA", score1: "", score2: "", status: "por jugar" },
+      { id: 7, time: "22:00", team1: "HAI", flag1: "🇭🇹", team2: "MAR", flag2: "🇲🇦", group: "Grupo C · Gillette Stadium, Boston, USA", score1: "", score2: "", status: "por jugar" }
     ]
   },
   {
     date: "Domingo 28/6",
     matches: [
-      { id: 20, time: "14:00", team1: "Argentina", flag1: "🇦🇷", team2: "Francia", flag2: "🇫🇷", group: "Octavos de final · Estadio Lusail", score1: "3", score2: "3", winner: 1, status: "por jugar" }
+      { id: 20, time: "14:00", team1: "ARG", flag1: "🇦🇷", team2: "FRA", flag2: "🇫🇷", group: "Octavos de final · Estadio Lusail", score1: "3", score2: "3", winner: 1, status: "por jugar" }
     ]
   }
 ];
