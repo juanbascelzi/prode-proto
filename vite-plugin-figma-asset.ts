@@ -21,14 +21,14 @@ function hash(str: string): number {
 function avatarUrlFor(id: string): string {
   const seed = id.replace(/^figma:asset\//, '')
   const bg = BG_PALETTE[hash(seed) % BG_PALETTE.length]
-  // DiceBear "avataaars" = estilo memoji/cartoon como el de la referencia.
-  // Usamos la URL pública que devuelve un SVG directo.
+  // DiceBear "personas" = caras 3D-ish estilizadas, lo más cercano
+  // a los Memoji de Apple (estilo de la imagen de referencia).
   const params = new URLSearchParams({
     seed,
     backgroundColor: bg,
     radius: '50',
   })
-  return `https://api.dicebear.com/7.x/avataaars/svg?${params.toString()}`
+  return `https://api.dicebear.com/7.x/personas/svg?${params.toString()}`
 }
 
 export default function figmaAssetPlugin(): Plugin {
